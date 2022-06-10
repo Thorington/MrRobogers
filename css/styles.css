@@ -2,7 +2,6 @@ body {
   font-family:sans-serif;
   font-size: smaller;
   margin: 5%;
-  /* background-image: url(../img/collage.jpg); */
   background-attachment: fixed;
   font-family: Georgia;
   margin-top: 10%;
@@ -46,7 +45,7 @@ h2 {
   border-radius: 50px;
   background-color: aliceblue;
   padding: 7%;
-  width: 50%;
+  width: 70%;
   position: relative;
   margin: auto;
   display: block;
@@ -60,10 +59,9 @@ p {
 }
 
 #output {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  font-weight: bold;
   padding-top: 20px;
-  font-style: normal;
+  overflow-wrap: break-word;
 }
 
