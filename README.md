@@ -21,6 +21,15 @@ This page asks the user for a number and returns a range of numbers from 0 to th
 * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
 * Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
+## Tests
+
+# _Describe: output(number)_
+
+Test: "It should return an array of numbers from 0 to the user's number"
+Code:
+output(5);
+Expected Output: [0, 1, 2, 3, 4, 5]
+
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop

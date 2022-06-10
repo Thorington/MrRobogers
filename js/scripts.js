@@ -1,25 +1,15 @@
 //Business Logic//
 
 function output(number) {
-  let result = [];
+  let resultArray = [];
   for (let index = 0; index <= parseInt(number); index += 1) {
-    function replace(result) {
-      const newResult = result.split(" ");
-      let i = 0;
-      newResult.forEach(function (element) {
-        if (element.includes("1")) {
-          newResult.splice(index, 1, "Beep!");
-        }
-        index++;
-      });
-      return newResult;
-    }
-    result.push(newResult);
-
-
+   resultArray.push(index);
   }
-  return (result + " ");
-}
+    return (resultArray + " ");
+  }
+  
+
+
 
   // if (noInput(number)) {
   //   return 0;
@@ -42,3 +32,11 @@ $(document).ready(function(){
   });
 });
 
+// function replace(resultArray) {
+//   const modified = result.split(" ");
+//   modified.forEach(function (result) {
+//     if (result.includes(1)) {
+//       modified.splice(index, 1, "Beep!");
+//     }
+//     index++;
+//   });
