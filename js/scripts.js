@@ -1,30 +1,21 @@
 //Business Logic//
 
-function forLoop(number){
 
-let initialResult = [];
 
+function forLoop(number) {
+  let result = [];
   for (let index = 0; index <= parseInt(number); index += 1) {
-    initialResult.push(index);
+    result.push(index);
+    
   }
-  return (initialResult + " ");
+  return (result + " ");
 }
 
-let text = initialResult;
-let finalResult = text.replace(1, "Beep!");
-
-
-
-
-
-
-
-
-
-  
-
-
-
+// function replace(result){
+//   let myStr = result;
+//   let newStr = myStr.replace(/"1", "Beep!");
+//   result.push(newStr);
+// }
 
 
 
@@ -47,8 +38,7 @@ $(document).ready(function(){
     event.preventDefault();
     const number = $("#number").val ();
     const result = forLoop(number);
-    $("#output").html(initialResult);
-    $("#output").html(finalResult);
+    $("#output").html(result);
   });
 });
 
