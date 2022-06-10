@@ -1,25 +1,25 @@
 //Business Logic//
 
-
-
-function forLoop(number) {
+function output(number) {
   let result = [];
   for (let index = 0; index <= parseInt(number); index += 1) {
-    result.push(index);
-    
+    function replace(result) {
+      const newResult = result.split(" ");
+      let i = 0;
+      newResult.forEach(function (element) {
+        if (element.includes("1")) {
+          newResult.splice(index, 1, "Beep!");
+        }
+        index++;
+      });
+      return newResult;
+    }
+    result.push(newResult);
+
+
   }
   return (result + " ");
 }
-
-// function replace(result){
-//   let myStr = result;
-//   let newStr = myStr.replace(/"1", "Beep!");
-//   result.push(newStr);
-// }
-
-
-
-
 
   // if (noInput(number)) {
   //   return 0;
@@ -37,7 +37,7 @@ $(document).ready(function(){
   $("form#counter").submit(function(event){
     event.preventDefault();
     const number = $("#number").val ();
-    const result = forLoop(number);
+    const result = output(number);
     $("#output").html(result);
   });
 });
