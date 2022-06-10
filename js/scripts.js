@@ -2,17 +2,26 @@
 
 function forLoop(number){
 
-let result = [];
+let initialResult = [];
 
   for (let index = 0; index <= parseInt(number); index += 1) {
-    result.push(index);
+    initialResult.push(index);
   }
-  if ((result).includes("1")){
-      return "Beep!";
-    }
-  return (result + " ");
+  return (initialResult + " ");
 }
 
+let text = initialResult;
+let finalResult = text.replace(1, "Beep!");
+
+
+
+
+
+
+
+
+
+  
 
 
 
@@ -38,7 +47,8 @@ $(document).ready(function(){
     event.preventDefault();
     const number = $("#number").val ();
     const result = forLoop(number);
-    $("#output").html(result);
+    $("#output").html(initialResult);
+    $("#output").html(finalResult);
   });
 });
 

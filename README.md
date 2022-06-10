@@ -29,7 +29,7 @@ This page asks the user for a number and returns a range of numbers from 0 to th
 
 ## Known Bugs
 
-* No known bugs.
+* No known bugs
 
 ## License
 
