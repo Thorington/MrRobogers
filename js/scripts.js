@@ -1,23 +1,24 @@
 //Business Logic//
 
 function output(number) {
-  let resultArray = [];
-  for (let index = 0; index <= parseInt(number); index += 1) {
-
-    if ([index].includes(1)) {
-      resultArray.push(" " + "Beep!");
+    let resultArray = [];
+    for (let index = 0; index <= parseInt(number); index += 1) {
+  
+      if ([index].toString("").includes("1")) {
+        resultArray.push(" " + "Beep!");
+      }
+      else if ([index].toString("").includes("2")) {
+        resultArray.push(" " + "Boop!");
+      }
+      else if ([index].toString("").includes("3")) {
+        resultArray.push(" " + "Won't you be my neighbor?");
+      }
+      else {resultArray.push(" " + index);
+      }
     }
-    if ([index].includes(2)) {
-      resultArray.push(" " + "Boop!");
-    }
-    if ([index].includes(3)) {
-      resultArray.push(" " + "Won't you be my neighbor?");
-    }
-    else {resultArray.push(" " + index);
-    }
+    return (resultArray + "");
   }
-  return (resultArray + "");
-}
+ 
 
   
 
@@ -31,3 +32,5 @@ $(document).ready(function(){
     $("#output").html(result);
   });
 });
+
+
