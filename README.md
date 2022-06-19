@@ -25,9 +25,12 @@ This page asks the user for a number and returns a range of numbers from 0 to th
 
 # _Describe: output(number)_
 
-Test: "It should return an array of numbers from 0 to the user's number"
-Code: output(5);
-Expected Output: [0, 1, 2, 3, 4, 5]
+| Test Description  | Input Example (Code) | Expected Output Example |
+| ------------- | ------------- | ------------- |
+| "It should return an array of numbers from 0 to the user's number"  | output(5); | [0, 1, 2, 3, 4, 5] |
+| "It should replace resulting numbers that contain a 1 with "Beep!" | output(5); | [0, "Beep!", 2, 3, 4, 5] |
+| "Additionally, it should replace resulting numbers that contain a 2 with "Boop!"  | output(5); | [0, "Beep!", "Boop!", 3, 4, 5] |
+| "Additionally, it should replace resulting numbers that contain a 3 with "Won't you be my neighbor?"  | output(5); | [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5] |
 
 ## Setup/Installation Requirements
 
@@ -37,9 +40,7 @@ Expected Output: [0, 1, 2, 3, 4, 5]
 
 ## Known Bugs
 
-* Doesn't yet replace numbers that contain a 1 with "Beep!"
-* Doesn't yet replace numbers that contain a 2 with "Boop!"
-* Doesn't yet replace numbers that contain a 3 with "Won't you be my neighbor?"
+* None!
 
 ## License
 

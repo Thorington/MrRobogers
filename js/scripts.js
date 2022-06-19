@@ -18,9 +18,7 @@ function output(number) {
     }
     return (resultArray + "");
   }
- 
 
-  
 
 //UI Logic//
 
