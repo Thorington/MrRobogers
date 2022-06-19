@@ -1,4 +1,4 @@
-# _Indepedent Project #3: Mr. Roboger's Neighborhood_
+# _Independent Project #3: Mr. Roboger's Neighborhood_
 
 #### Contributors: _**Claire Thorington**_
 
